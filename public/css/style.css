@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #5c64dd, #e19de1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.user-info {
+  margin-top: 20px;
+}
+
+.user-info input, .user-info button {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.chat-section.hidden {
+  display: none;
+}
+
+.messages-container {
+  width: 100%;
+  max-width: 800px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  margin-bottom: 100px;
+}
+
+.message {
+  margin-top: 10px;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #d4e4b7;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #f7f0a3;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+#send-container {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#fileInput {
+  padding: 5px;
+}
+
+.send-button {
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.online-users {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-top: 2px solid #333;
+  overflow-x: auto;
+}
+
+.user-button {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.user-button:hover {
+  background-color: #0056b3;
+}

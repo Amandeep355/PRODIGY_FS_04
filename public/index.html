@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iChat - Realtime Chat App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="js/client.js"></script>
+  <link rel="icon" href="data:,">
+
+</head>
+<body>
+ <nav>
+  <img class="logo" src="assets/1216569_message_bubble_chat_comment_communication_icon.png" alt="Chat Logo" />
+</nav>
+
+
+  <div class="user-info">
+    <input type="text" id="nameInput" placeholder="Enter your name" required />
+    <input type="text" id="roomInput" placeholder="Enter room name" required />
+    <button id="joinBtn">Join Room</button>
+  </div>
+
+  <div class="chat-section hidden">
+    <div class="messages-container"></div>
+
+    <div class="online-users"></div>
+
+    <div class="input-container">
+      <form id="send-container">
+        <input type="text" class="message-input" placeholder="Type a message..." />
+         <label for="fileInput">📎</label>
+        <input type="file" id="fileInput" />
+        <button type="submit" class="send-button">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
